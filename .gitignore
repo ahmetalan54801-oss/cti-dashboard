@@ -1,0 +1,5 @@
+cti.db
+*.log
+__pycache__/
+*.pyc
+live_url.txt

@@ -1,0 +1,1 @@
+# Bu proje sadece Python stdlib kullanıyor, harici bağımlılık yok.

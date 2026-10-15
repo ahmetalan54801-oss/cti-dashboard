@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cti-dashboard
+    runtime: python
+    plan: free
+    buildCommand: "true"
+    startCommand: "python3 worker.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
