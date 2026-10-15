@@ -56,6 +56,8 @@ class Handler(BaseHTTPRequestHandler):
             return self._send_file(STATIC_DIR / "index.html", "text/html; charset=utf-8")
         if path == "/app.js":
             return self._send_file(STATIC_DIR / "app.js", "application/javascript; charset=utf-8")
+        if path == "/og-image.png":
+            return self._send_file(STATIC_DIR / "og-image.png", "image/png")
 
         if path == "/api/summary":
             conn = sqlite3.connect(DB_PATH)
